@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     <Auth0Provider
       domain="kahu-jennifer.au.auth0.com"
-      clientId="HZM1FKSsrKBdv0d58YsLG12sPXVoszAW"
+      clientId="wSXyLTeM8M5tPaa3aXOL5GHzZqA8E3je"
       redirectUri={window.location.origin}
-      audience="https://fruits/api"
+      audience="https://image-pad/api"
     >
       <Router>
         <App />

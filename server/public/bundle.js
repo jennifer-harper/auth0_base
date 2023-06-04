@@ -49113,9 +49113,9 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__.Auth0Provider, {
     domain: "kahu-jennifer.au.auth0.com",
-    clientId: "HZM1FKSsrKBdv0d58YsLG12sPXVoszAW",
+    clientId: "wSXyLTeM8M5tPaa3aXOL5GHzZqA8E3je",
     redirectUri: window.location.origin,
-    audience: "https://fruits/api",
+    audience: "https://image-pad/api",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], {})
     })
