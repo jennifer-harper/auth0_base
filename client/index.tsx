@@ -6,12 +6,6 @@ import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('app') as HTMLElement).render(
-    /**
-     * Auth0Provider is a component that has a hook that provides
-     * all authentication operations
-     *
-     * TODO: replace the empty strings below with your own domain, clientId, and audience
-     */
     <Auth0Provider
       domain="kahu-jennifer.au.auth0.com"
       clientId="wSXyLTeM8M5tPaa3aXOL5GHzZqA8E3je"
