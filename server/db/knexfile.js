@@ -46,3 +46,26 @@ module.exports = {
     },
   },
 }
+
+
+//https://docs.railway.app/develop/cli
+// Railway.app
+// npm i -g @railway/cli
+// railway login
+// (Open the browser? Yes - open link and varify in r.app)
+// # Create a new project
+// railway init
+
+// add 
+
+// In project settings
+// In project settings 
+//add Production in Environment 
+//and NODE.ENV production to shared variables (dont forget to share)
+
+// DATABASE_URL ${{Postgres.DATABASE_URL}}
+// NODE.ENV ${{shared.NODE_ENV}} to 'projectname' variables
+
+
+// site should deploy
+// run railway run npm run knex migrate:rollback/latest/seed:run
