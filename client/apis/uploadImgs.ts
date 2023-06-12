@@ -1,15 +1,16 @@
 import request from 'superagent'
-import * as Img from '../../models/character'
-const serverURL = '/api/v1/uploads'
+
+import * as Chr from '../../models/basic'
+const serverURL = '/api/v1/basic'
 
 
-export function getUploads(): Promise<Img.UploadImg[]> {
+export function getUploads(): Promise<Chr.BasicId[]> {
     return request
     .get(serverURL)
     .then(res => res.body)
   }
   
-  export function createUpload(data:Img.UploadImgData): Promise<Img.UploadImg>{
+  export function createUpload(data:Chr.BasicData): Promise<Chr.BasicId>{
     return request
     .post(serverURL)
     .send(data)
@@ -29,7 +30,7 @@ export function getUploads(): Promise<Img.UploadImg[]> {
     .then(res => res.body)
   }
 
-  export function editUpload(id:number, data:Img.UploadImgData): Promise<Img.UploadImg>{
+  export function editUpload(id:number, data:Chr.BasicData): Promise<Chr.BasicId>{
     return request
       .patch(`${serverURL}/${id}`)
       .send(data)

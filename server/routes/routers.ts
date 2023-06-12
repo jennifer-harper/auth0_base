@@ -1,12 +1,12 @@
 import express from 'express'
-import * as db from '../db/uploadImgsDB'
+import * as db from '../db/dataBase'
 
 const router = express.Router()
 
 
 router.get('/', async (req, res) => {
     try{
-        const data = await db.getUploadsDB()
+        const data = await db.fetchAllDB()
         res.json(data)
     }catch (e) {
         res.status(500).json({ msg: (e as Error).message })
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try{
-        await db.delUploadsDB(+req.params.id)
+        await db.deleteDB(+req.params.id)
         res.sendStatus(200)
     } catch (e) {
         res.status(500).json({ msg: (e as Error).message })
@@ -29,9 +29,9 @@ router.delete('/:id', async (req, res) => {
 
 router.post('/', async  (req, res) => {
     try{
-        const newImg = req.body
-        const imgArr = await db.createUploadDB(newImg)
-        res.json(imgArr[0])
+        const newData = req.body
+        const data = await db.createDB(newData)
+        res.json(data[0])
     }catch (e) {
         res.status(500).json({ msg: (e as Error).message })
     }
@@ -41,7 +41,7 @@ router.post('/', async  (req, res) => {
 
 router.get('/:id', async (req, res) => {
     try{
-        const data = await db.getIdUploadDB(+req.params.id)
+        const data = await db.getIdDB(+req.params.id)
         res.json(data)
     }catch (e) {
         res.status(500).json({ msg: (e as Error).message })
@@ -50,7 +50,7 @@ router.get('/:id', async (req, res) => {
 
 router.patch('/:id', async (req, res) => {        
     try{
-        const data = await db.editUploadDB(+req.params.id, req.body)
+        const data = await db.editDB(+req.params.id, req.body)
         res.json(data)
     }catch (e) {
         res.status(500).json({ msg: (e as Error).message })

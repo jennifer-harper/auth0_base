@@ -25,7 +25,6 @@ function Nav() {
     </IfNotAuthenticated>
     <nav className='nav'>
       <Link to='/'><p>Home</p></Link>
-      <Link to='/db'><p>Upload Images</p></Link>
     </nav>
   </>
   )

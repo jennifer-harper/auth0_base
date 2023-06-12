@@ -1,7 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 import Nav from './Nav'
-import UploadToDb from "./UploadToDb"
-import {EditUpload } from './EditUpload'
 
 function App() {
   return (
@@ -9,8 +7,6 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={'Welcome Home'} />
-        <Route path='/db' element={<UploadToDb />} />
-        <Route path='/upload/:id' element={<EditUpload />} />
       </Routes>
     </>
   )
