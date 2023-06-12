@@ -32,7 +32,7 @@ router.post('/', async  (req, res) => {
         const newData = req.body
         const data = await db.createDB(newData)
         res.json(data[0])
-    }catch (e) {
+    } catch (e) {
         res.status(500).json({ msg: (e as Error).message })
     }
 })
