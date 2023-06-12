@@ -58,8 +58,9 @@ module.exports = {
 //add Production in Environment 
 //and NODE.ENV production to shared variables (dont forget to share)
 
+//add variable in project
 // DATABASE_URL ${{Postgres.DATABASE_URL}}
-// NODE.ENV ${{shared.NODE_ENV}} to 'projectname' variables
+
 
 
 // site should deploy
