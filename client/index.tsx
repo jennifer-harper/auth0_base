@@ -8,9 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   createRoot(document.getElementById('app') as HTMLElement).render(
     <Auth0Provider
       domain="kahu-jennifer.au.auth0.com"
-      clientId="HZM1FKSsrKBdv0d58YsLG12sPXVoszAW"
+      // clientId="HZM1FKSsrKBdv0d58YsLG12sPXVoszAW"
+      clientId="Gn1ZWSCqiDmLZCaXc5jWOAEq5m83ZK22"
       redirectUri={window.location.origin}
-      audience="https://fruits/api"
+      // audience="https://fruits/api"
+      audience="https://test-site/api"
     >
       <Router>
         <App />

@@ -1,5 +1,5 @@
 import dbCon from './connection'
-import * as Chr from '../../models/basic'
+import * as Chr from '../../client/models/basic'
 
 //*******************Get all
 export function fetchAllDB(){

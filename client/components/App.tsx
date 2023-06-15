@@ -1,13 +1,15 @@
-import { Routes, Route } from 'react-router-dom'
+import './app.css'
 import Nav from './Nav'
 
+
 function App() {
+
   return (
     <>
-      <Nav />
-      <Routes>
-        <Route path="/" element={'Welcome Home'} />
-      </Routes>
+    <Nav />
+    <div className='text-3xl text-green-600 p-2'>
+      Hello Geeks!
+    </div>
     </>
   )
 }
