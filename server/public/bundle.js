@@ -42729,10 +42729,14 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener('DOMContentLoaded', () => {
   (0,react_dom_client__WEBPACK_IMPORTED_MODULE_0__.createRoot)(document.getElementById('app')).render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_auth0_auth0_react__WEBPACK_IMPORTED_MODULE_1__.Auth0Provider, {
-    domain: "kahu-jennifer.au.auth0.com",
-    clientId: "HZM1FKSsrKBdv0d58YsLG12sPXVoszAW",
-    redirectUri: window.location.origin,
-    audience: "https://fruits/api",
+    domain: "kahu-jennifer.au.auth0.com"
+    // clientId="HZM1FKSsrKBdv0d58YsLG12sPXVoszAW"
+    ,
+    clientId: "Gn1ZWSCqiDmLZCaXc5jWOAEq5m83ZK22",
+    redirectUri: window.location.origin
+    // audience="https://fruits/api"
+    ,
+    audience: "https://test-site/api",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], {})
     })
